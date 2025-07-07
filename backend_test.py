@@ -5,7 +5,7 @@ import sys
 from datetime import datetime
 
 class ECommerceAPITester:
-    def __init__(self, base_url="https://8c5f46c2-29fe-42c8-986f-e46eab02f90a.preview.emergentagent.com"):
+    def __init__(self, base_url="http://localhost:8001"):
         self.base_url = base_url
         self.tests_run = 0
         self.tests_passed = 0
@@ -134,8 +134,8 @@ def main():
     print("🚀 Starting E-Commerce API Tests")
     print("================================")
     
-    # Get backend URL from environment or use default
-    backend_url = "https://8c5f46c2-29fe-42c8-986f-e46eab02f90a.preview.emergentagent.com"
+    # Use localhost for testing
+    backend_url = "http://localhost:8001"
     
     tester = ECommerceAPITester(backend_url)
     
